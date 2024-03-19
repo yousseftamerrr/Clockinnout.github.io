@@ -4,23 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clock In/Out System</title>
-    <!-- Add your CSS file for styling -->
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        label {
+            margin-top: 1rem;
+            font-size: 1.2rem;
+        }
+        input[type="text"], input[type="file"] {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        button {
+            padding: 0.5rem 2rem;
+            font-size: 1.2rem;
+            border-radius: 4px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #3e8e41;
+        }
+    </style>
 </head>
 <body>
     <h1>Clock In/Out System</h1>
     <form id="clock-form">
-        <label for="worker-name">Worker Name:</label>
+        <labelfor="worker-name">Worker Name:</label>
         <input type="text" id="worker-name" name="worker-name" required>
 
         <label for="picture">Submit Picture:</label>
         <input type="file" id="picture" name="picture" accept="image/*" required>
 
-        <button type="submit">Clock In</button>
-        <button type="submit">Clock Out</button>
-    </form>
-
-    <!-- Add your JavaScript file for handling form submission -->
-    <script src="script.js"></script>
+        <button type="submit" name="action" value="clock_in">Clock In</button>
+        <button type="submit" name="action" value="clock_out">Clock Out</buttonfor="worker-name">>
+    </formWorker Name:</label>>
 </body>
 </html>
